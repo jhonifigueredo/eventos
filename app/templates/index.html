@@ -2,13 +2,15 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{ titulo }}</title>
 </head>
 <body>
-    <h1>Listando eventos</h1>
+    <h1>{{ titulo }}</h1>
     <ul>
-        {% for evento in eventos %}
-        <li>{{ evento }}</li>
+        {% for e in eventos %}
+        <li>
+            {{ e }}
+        </li>
         {% endfor %}
     </ul>
 </body>
