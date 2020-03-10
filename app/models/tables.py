@@ -23,7 +23,7 @@ class Atividade(db.Model):
     data = db.Column(db.DateTime,nullable=False)
     carga_horaria = db.Column(db.Float,nullable=False)
     arquivo = db.Column(db.String(191),nullable=False)
-    usurio_id = db.Column(db.Integer, db.ForeignKey('usuarios.id'),nullable=False)
+    usuario_id = db.Column(db.Integer, db.ForeignKey('usuarios.id'),nullable=False)
 
     def __repr__(self):
         return '<Atividade : %>' % self.nome
